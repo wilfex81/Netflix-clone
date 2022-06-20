@@ -11,18 +11,6 @@ Netflix - Movie
     <main class='bg-primary_black h-full w-full '>
 
         {{ movie|json_script:"movie_data" }}
-        
-        <video  controls class="w-full h-screen player"></video>
-         <!-- Or embed shortcut: -->
-         {% load embed_video_tags %}
-        <!-- The video tag: -->
-        {% video item.video as my_video %}
-        URL: {{ my_video.url }}
-        Thumbnail: {{ my_video.thumbnail }}
-        Backend: {{ my_video.backend }}
-
-        {% video my_video "large" %}
-        {% endvideo %}
     </main>
     <script>
         const videoEl=document.querySelector('video')

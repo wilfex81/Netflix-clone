@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-fiafz9&8k5d=9q5)3izhpdjp@o#si1t+t9v15v4e4y+@6c&jtu
 # SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['django-netflix-app-clone.herokuapp.com', '127.0.0.1']
 
